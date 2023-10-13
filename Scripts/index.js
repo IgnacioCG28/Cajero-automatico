@@ -1,6 +1,6 @@
 /** 
  *  Autor: Ignacio Carmona González
- *  Github: 
+ *  Github: https://github.com/IgnacioCG28/Cajero-automatico.git
 */
 document.addEventListener("DOMContentLoaded", () => {
   let cantidad = 1000;
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const pantalla = document.getElementById("pantalla");
 
   pantalla.innerHTML = `<p>Ninguna acción realizada.<p>Saldo actual: ${cantidad}€<p> `;
-
+  
   depositar.addEventListener("click", () => {
     const input = parseFloat(inputElement.value);
     if (isNaN(input) || input <= 0) {
